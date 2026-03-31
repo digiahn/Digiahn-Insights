@@ -1,0 +1,53 @@
+title: "ARGON INTELLIGENCE"
+description: "글로벌 시장·지정학 분석 | 에너지·테크 트렌드 인텔리전스"
+author: "안희권"
+email: ""
+url: "https://digiahn.github.io"
+baseurl: ""
+
+# 네이버 블로그 링크
+naver_blog: "https://blog.naver.com/argon"
+
+# 소셜
+twitter_username: ""
+github_username: "digiahn"
+
+# 빌드
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# 플러그인
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# 카테고리 (브랜드 가이드 기반)
+categories_list:
+  - name: "글로벌 시장 분석"
+    slug: "global-market"
+    en: "Global Markets"
+    icon: "◈"
+  - name: "지정학 리스크"
+    slug: "geopolitics"
+    en: "Geopolitics"
+    icon: "◉"
+  - name: "에너지·차세대 기술"
+    slug: "energy-tech"
+    en: "Energy & Tech"
+    icon: "◇"
+  - name: "위클리 브리핑"
+    slug: "weekly"
+    en: "Weekly Brief"
+    icon: "◎"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules

@@ -1,0 +1,38 @@
+<nav class="site-nav" id="site-nav">
+  <div class="container">
+    <div class="nav-inner">
+
+      <a href="{{ '/' | relative_url }}" class="nav-logo">
+        <span class="nav-logo__wordmark">Argon Intelligence</span>
+        <span class="nav-logo__tagline">Global Market · Geopolitics · Energy</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="{{ '/posts/' | relative_url }}">아카이브</a>
+        <a href="{{ '/categories/' | relative_url }}">카테고리</a>
+        <a href="{{ '/about/' | relative_url }}">소개</a>
+        <a href="{{ site.naver_blog }}" target="_blank" rel="noopener" class="nav-naver">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16.273 12.845L7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727z"/>
+          </svg>
+          네이버 블로그
+        </a>
+      </div>
+
+      <button class="nav-hamburger" id="nav-toggle" aria-label="메뉴">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" style="display:none; position:fixed; top:60px; left:0; right:0; bottom:0; background:var(--paper); z-index:99; padding:2rem; flex-direction:column; gap:1.5rem; border-top:0.5px solid var(--rule);">
+  <a href="{{ '/posts/' | relative_url }}" style="font-size:1.25rem; font-family:var(--ff-display); color:var(--ink);">아카이브</a>
+  <a href="{{ '/categories/' | relative_url }}" style="font-size:1.25rem; font-family:var(--ff-display); color:var(--ink);">카테고리</a>
+  <a href="{{ '/about/' | relative_url }}" style="font-size:1.25rem; font-family:var(--ff-display); color:var(--ink);">소개</a>
+  <a href="{{ site.naver_blog }}" target="_blank" rel="noopener" style="font-size:1.25rem; font-family:var(--ff-display); color:var(--accent);">네이버 블로그 →</a>
+</div>

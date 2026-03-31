@@ -1,0 +1,37 @@
+---
+layout: default
+title: "전체 아카이브"
+permalink: /posts/
+---
+
+<header class="archive-header">
+  <div class="container">
+    <div style="margin-bottom: 0.5rem; font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent-2); font-weight: 500;">Archive</div>
+    <h1 style="font-family: var(--ff-display); font-size: clamp(1.8rem, 3.5vw, 2.8rem);">전체 분석 보고서</h1>
+  </div>
+</header>
+
+<div class="archive-list">
+  <div class="container">
+
+    {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+
+    {% for year_group in posts_by_year %}
+    <div style="margin-bottom: 2.5rem;">
+      <h2 style="font-family: var(--ff-display); font-size: 1.35rem; color: var(--ink); padding: 0.75rem 0; border-bottom: 2px solid var(--rule); margin-bottom: 0;">{{ year_group.name }}</h2>
+      {% for post in year_group.items %}
+      <a href="{{ post.url | relative_url }}" class="archive-item">
+        <span class="archive-item__date">{{ post.date | date: "%m. %d" }}</span>
+        <span class="archive-item__title">{{ post.title }}</span>
+        <span class="archive-item__cat">{{ post.category }}</span>
+      </a>
+      {% endfor %}
+    </div>
+    {% endfor %}
+
+    {% if site.posts.size == 0 %}
+    <p style="color: var(--ink-4); font-size: 0.95rem; padding: 2rem 0;">아직 게시된 글이 없습니다. 곧 첫 분석 보고서를 업로드할 예정입니다.</p>
+    {% endif %}
+
+  </div>
+</div>

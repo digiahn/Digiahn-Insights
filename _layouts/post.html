@@ -1,0 +1,66 @@
+---
+layout: default
+---
+
+<article>
+  <header class="post-header">
+    <div class="container--narrow">
+      <div class="post-header__cat">
+        {{ page.category }}
+        {% if page.tags %}
+          {% for tag in page.tags %} · {{ tag }}{% endfor %}
+        {% endif %}
+      </div>
+      <h1 class="post-header__title">{{ page.title }}</h1>
+      {% if page.subtitle %}
+      <p class="post-header__subtitle">{{ page.subtitle }}</p>
+      {% endif %}
+      <div class="post-header__byline">
+        <span>By <strong>{{ site.author }}</strong></span>
+        <span>{{ page.date | date: "%Y년 %m월 %d일" }}</span>
+        {% if page.reading_time %}
+        <span>· 읽기 {{ page.reading_time }}분</span>
+        {% endif %}
+      </div>
+    </div>
+  </header>
+
+  <div class="post-content">
+    <div class="container--narrow">
+      {% if page.key_point %}
+      <div class="key-takeaway">
+        <div class="key-takeaway__label">핵심 인사이트</div>
+        <div class="key-takeaway__content">{{ page.key_point }}</div>
+      </div>
+      {% endif %}
+
+      <div class="post-body">
+        {{ content }}
+      </div>
+
+      <!-- 네이버 블로그 CTA -->
+      <div style="margin-top: 3rem; padding: 1.5rem; border: 0.5px solid var(--rule); border-radius: 6px; text-align: center;">
+        <p style="font-size: 0.85rem; color: var(--ink-4); margin-bottom: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500;">More Content</p>
+        <p style="font-size: 0.95rem; color: var(--ink-3); margin-bottom: 1rem;">더 많은 분석과 위클리 브리핑은 네이버 블로그에서 확인하세요.</p>
+        <a href="{{ site.naver_blog }}" target="_blank" rel="noopener" class="btn btn--primary">네이버 블로그 방문 ↗</a>
+      </div>
+
+      <!-- 이전/다음 포스트 -->
+      <nav style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 3rem; padding-top: 1.5rem; border-top: 0.5px solid var(--rule);">
+        {% if page.previous.url %}
+        <a href="{{ page.previous.url | relative_url }}" style="padding: 1rem; border: 0.5px solid var(--rule); border-radius: 6px; transition: border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--rule)'">
+          <div style="font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-4); margin-bottom: 0.4rem;">← 이전 글</div>
+          <div style="font-family: var(--ff-display); font-size: 0.95rem; color: var(--ink);">{{ page.previous.title }}</div>
+        </a>
+        {% else %}<div></div>{% endif %}
+
+        {% if page.next.url %}
+        <a href="{{ page.next.url | relative_url }}" style="padding: 1rem; border: 0.5px solid var(--rule); border-radius: 6px; text-align: right; transition: border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--rule)'">
+          <div style="font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-4); margin-bottom: 0.4rem;">다음 글 →</div>
+          <div style="font-family: var(--ff-display); font-size: 0.95rem; color: var(--ink);">{{ page.next.title }}</div>
+        </a>
+        {% endif %}
+      </nav>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,331 @@
+---
+layout: default
+title: "홈"
+---
+
+<!-- 마켓 티커 -->
+<div class="market-ticker">
+  <div class="container">
+    <div class="ticker-track" id="ticker">
+      <div class="ticker-item">
+        <span class="ticker-item__symbol">S&P500</span>
+        <span class="ticker-item__value">5,248.32</span>
+        <span class="ticker-item__change ticker-item__change--up">▲ 0.43%</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-item__symbol">NASDAQ</span>
+        <span class="ticker-item__value">16,742.10</span>
+        <span class="ticker-item__change ticker-item__change--up">▲ 0.61%</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-item__symbol">WTI</span>
+        <span class="ticker-item__value">$82.14</span>
+        <span class="ticker-item__change ticker-item__change--down">▼ 0.22%</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-item__symbol">GOLD</span>
+        <span class="ticker-item__value">$2,318.50</span>
+        <span class="ticker-item__change ticker-item__change--up">▲ 0.18%</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-item__symbol">USD/KRW</span>
+        <span class="ticker-item__value">1,342.80</span>
+        <span class="ticker-item__change ticker-item__change--down">▼ 0.09%</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-item__symbol">BTC</span>
+        <span class="ticker-item__value">$67,820</span>
+        <span class="ticker-item__change ticker-item__change--up">▲ 1.24%</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-item__symbol">TSM</span>
+        <span class="ticker-item__value">$168.42</span>
+        <span class="ticker-item__change ticker-item__change--up">▲ 0.88%</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-item__symbol">NIKKEI</span>
+        <span class="ticker-item__value">38,920.10</span>
+        <span class="ticker-item__change ticker-item__change--down">▼ 0.31%</span>
+      </div>
+      <!-- 반복 (무한 스크롤용) -->
+      <div class="ticker-item">
+        <span class="ticker-item__symbol">S&P500</span>
+        <span class="ticker-item__value">5,248.32</span>
+        <span class="ticker-item__change ticker-item__change--up">▲ 0.43%</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-item__symbol">NASDAQ</span>
+        <span class="ticker-item__value">16,742.10</span>
+        <span class="ticker-item__change ticker-item__change--up">▲ 0.61%</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-item__symbol">WTI</span>
+        <span class="ticker-item__value">$82.14</span>
+        <span class="ticker-item__change ticker-item__change--down">▼ 0.22%</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-item__symbol">GOLD</span>
+        <span class="ticker-item__value">$2,318.50</span>
+        <span class="ticker-item__change ticker-item__change--up">▲ 0.18%</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-item__symbol">USD/KRW</span>
+        <span class="ticker-item__value">1,342.80</span>
+        <span class="ticker-item__change ticker-item__change--down">▼ 0.09%</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-item__symbol">BTC</span>
+        <span class="ticker-item__value">$67,820</span>
+        <span class="ticker-item__change ticker-item__change--up">▲ 1.24%</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-item__symbol">TSM</span>
+        <span class="ticker-item__value">$168.42</span>
+        <span class="ticker-item__change ticker-item__change--up">▲ 0.88%</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-item__symbol">NIKKEI</span>
+        <span class="ticker-item__value">38,920.10</span>
+        <span class="ticker-item__change ticker-item__change--down">▼ 0.31%</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 히어로 섹션 -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- 왼쪽: 브랜드 -->
+      <div class="hero-left">
+        <div class="hero-label">Data Intelligence Platform</div>
+        <h1 class="hero-title">
+          글로벌 시장을<br>
+          <em>읽는 눈</em>을<br>
+          키웁니다
+        </h1>
+        <p class="hero-body">
+          30년 IT 저널리즘 경력과 데이터 분석 역량을 결합한
+          글로벌 시장·지정학 인텔리전스. 경영진과 의사결정자를 위한
+          깊이 있는 분석을 매주 제공합니다.
+        </p>
+        <div class="hero-cta">
+          <a href="{{ '/posts/' | relative_url }}" class="btn btn--primary">
+            분석 보고서 보기 →
+          </a>
+          <a href="{{ site.naver_blog }}" target="_blank" rel="noopener" class="btn btn--ghost">
+            네이버 블로그
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <div class="hero-stat">
+            <div class="hero-stat__num">30+</div>
+            <div class="hero-stat__label">Years in IT</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat__num">{{ site.posts | size }}+</div>
+            <div class="hero-stat__label">분석 리포트</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat__num">4</div>
+            <div class="hero-stat__label">핵심 분야</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 오른쪽: 최신 포스트 -->
+      <div class="hero-featured">
+        <div class="hero-featured__badge">Latest Analysis</div>
+        {% if site.posts.first %}
+        <a href="{{ site.posts.first.url | relative_url }}" class="hero-featured__post">
+          <div class="hero-featured__cat">{{ site.posts.first.category }}</div>
+          <h2 class="hero-featured__title">{{ site.posts.first.title }}</h2>
+          <p class="hero-featured__excerpt">{{ site.posts.first.excerpt | strip_html }}</p>
+          <div class="hero-featured__footer">
+            <span class="hero-featured__date">{{ site.posts.first.date | date: "%Y. %m. %d" }}</span>
+            <span class="hero-featured__arrow">전체 읽기 →</span>
+          </div>
+        </a>
+        {% else %}
+        <div class="hero-featured__post">
+          <div class="hero-featured__cat">글로벌 시장 분석</div>
+          <h2 class="hero-featured__title">미·중 반도체 공급망 재편: 2024년 하반기 전망과 투자 시사점</h2>
+          <p class="hero-featured__excerpt">바이든 행정부의 추가 수출 규제 발효와 중국 반도체 자급화 가속 사이에서, 글로벌 반도체 공급망은 새로운 균형점을 찾고 있습니다. 한국 기업들의 포지셔닝 전략을 분석합니다.</p>
+          <div class="hero-featured__footer">
+            <span class="hero-featured__date">2024. 06. 15</span>
+            <span class="hero-featured__arrow">전체 읽기 →</span>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 카테고리 밴드 -->
+<section class="categories-band">
+  <div class="container">
+    <div class="categories-grid">
+      {% for cat in site.categories_list %}
+      <a href="{{ '/categories/' | append: cat.slug | append: '/' | relative_url }}" class="category-tile">
+        <div class="category-tile__icon">{{ cat.icon }}</div>
+        <div class="category-tile__name">{{ cat.name }}</div>
+        <div class="category-tile__en">{{ cat.en }}</div>
+        <div class="category-tile__count">
+          {% assign count = 0 %}
+          {% for post in site.posts %}
+            {% if post.category == cat.name %}{% assign count = count | plus: 1 %}{% endif %}
+          {% endfor %}
+          {{ count }}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- 최신 포스트 -->
+<section class="posts-section">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <div class="section-eyebrow">Recent Analysis</div>
+        <h2 class="section-title">최신 분석</h2>
+      </div>
+      <a href="{{ '/posts/' | relative_url }}" class="section-link">전체 보기 →</a>
+    </div>
+
+    <div class="posts-grid posts-grid--featured fade-up">
+      {% assign recent = site.posts | limit: 5 %}
+      {% for post in recent %}
+      <a href="{{ post.url | relative_url }}" class="post-card {% if forloop.first %}post-card--large{% endif %}">
+        <div class="post-card__cat">{{ post.category }}</div>
+        <h3 class="post-card__title">{{ post.title }}</h3>
+        <p class="post-card__excerpt">{{ post.excerpt | strip_html }}</p>
+        <div class="post-card__meta">
+          <span class="post-card__date">{{ post.date | date: "%Y. %m. %d" }}</span>
+          {% if post.reading_time %}
+          <span class="post-card__reading-time">{{ post.reading_time }}분 읽기</span>
+          {% endif %}
+        </div>
+      </a>
+      {% endfor %}
+
+      <!-- 포스트가 없을 때 예시 카드들 -->
+      {% if site.posts.size == 0 %}
+      <div class="post-card post-card--large">
+        <div class="post-card__cat">글로벌 시장 분석</div>
+        <h3 class="post-card__title">미·중 반도체 패권 전쟁과 한국의 전략적 선택</h3>
+        <p class="post-card__excerpt">반도체 공급망 재편이 가속화되는 가운데, 미국의 수출 통제 강화와 중국의 자급화 드라이브가 충돌하고 있습니다. 삼성전자와 SK하이닉스가 처한 딜레마와 최적 전략을 분석합니다.</p>
+        <div class="post-card__meta">
+          <span class="post-card__date">2024. 06. 15</span>
+          <span class="post-card__reading-time">8분 읽기</span>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-card__cat">지정학 리스크</div>
+        <h3 class="post-card__title">러-우 전쟁 장기화와 에너지 시장 재편</h3>
+        <p class="post-card__excerpt">2년을 넘긴 전쟁이 글로벌 에너지 패턴을 어떻게 바꾸고 있는지 심층 분석합니다.</p>
+        <div class="post-card__meta">
+          <span class="post-card__date">2024. 06. 10</span>
+          <span class="post-card__reading-time">6분 읽기</span>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-card__cat">에너지·차세대 기술</div>
+        <h3 class="post-card__title">SMR(소형모듈원자로) 상업화 레이스: 누가 앞서가나</h3>
+        <p class="post-card__excerpt">뉴스케일, 롤스로이스, 두산에너빌리티의 SMR 개발 현황과 시장 전망을 정리합니다.</p>
+        <div class="post-card__meta">
+          <span class="post-card__date">2024. 06. 05</span>
+          <span class="post-card__reading-time">7분 읽기</span>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<!-- 네이버 블로그 연계 섹션 -->
+<section class="naver-bridge">
+  <div class="container">
+    <div class="naver-bridge-inner">
+      <div>
+        <div class="naver-bridge__label">Naver Blog Connection</div>
+        <h2 class="naver-bridge__title">더 많은 콘텐츠는<br>네이버 블로그에서</h2>
+        <p class="naver-bridge__body">
+          이 사이트는 대표 분석 보고서와 포트폴리오를 소개합니다.
+          위클리 브리핑, 뉴스 코멘터리, 심층 인터뷰 등
+          더 풍부한 콘텐츠는 네이버 블로그(argon)에서 매주 업데이트됩니다.
+        </p>
+        <a href="{{ site.naver_blog }}" target="_blank" rel="noopener" class="btn btn--primary">
+          네이버 블로그 방문하기 ↗
+        </a>
+      </div>
+
+      <div class="naver-bridge__visual">
+        <div class="naver-feature">
+          <div class="naver-feature__icon">◈</div>
+          <div>
+            <div class="naver-feature__title">위클리 글로벌 브리핑</div>
+            <div class="naver-feature__desc">매주 월요일, 한 주의 핵심 글로벌 이슈 5선 정리</div>
+          </div>
+        </div>
+        <div class="naver-feature">
+          <div class="naver-feature__icon">◉</div>
+          <div>
+            <div class="naver-feature__title">월간 시장 트렌드 보고서</div>
+            <div class="naver-feature__desc">매달 첫 주, 섹터별 움직임과 투자 시사점 분석</div>
+          </div>
+        </div>
+        <div class="naver-feature">
+          <div class="naver-feature__icon">◇</div>
+          <div>
+            <div class="naver-feature__title">키플레이어 프로파일</div>
+            <div class="naver-feature__desc">시장을 움직이는 인물·기업·정책의 심층 해부</div>
+          </div>
+        </div>
+        <div class="naver-feature">
+          <div class="naver-feature__icon">◎</div>
+          <div>
+            <div class="naver-feature__title">수소·원자력 에너지 트래커</div>
+            <div class="naver-feature__desc">차세대 에너지 기술 개발 동향 추적 및 분석</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 필자 소개 -->
+<section class="about-strip">
+  <div class="container">
+    <div class="about-inner">
+      <div>
+        <h2 class="about-name serif">안희권</h2>
+        <div class="about-title">Data Analyst · IT Journalist</div>
+        <div class="about-divider"></div>
+      </div>
+      <div>
+        <p class="about-bio">
+          30년 이상 IT 저널리즘 현장에서 테크 산업의 흥망성쇠를 취재하며
+          글로벌 시장의 흐름을 읽어왔습니다. 현재는 데이터 분석가로서
+          정량적 접근과 심층 취재 역량을 결합해, 경영진과 의사결정자가
+          실질적으로 활용할 수 있는 시장 인텔리전스를 생산합니다.
+          주요 관심 분야는 미·중 기술 패권 경쟁, 에너지 전환,
+          반도체 공급망, 그리고 지정학 리스크와 금융시장의 상호작용입니다.
+        </p>
+        <div class="about-skills">
+          <span class="skill-tag">글로벌 시장 분석</span>
+          <span class="skill-tag">지정학 리스크</span>
+          <span class="skill-tag">에너지 정책</span>
+          <span class="skill-tag">반도체 산업</span>
+          <span class="skill-tag">데이터 분석</span>
+          <span class="skill-tag">IT 저널리즘</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,50 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <div class="footer-brand__logo">Argon Intelligence</div>
+        <p class="footer-brand__desc">
+          글로벌 시장과 지정학 리스크를 분석하는 데이터 기반 인텔리전스 플랫폼.
+          30년 IT 저널리즘 경력을 바탕으로 한 심층 시장 분석을 제공합니다.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col__heading">카테고리</div>
+        <div class="footer-links">
+          <a href="{{ '/categories/global-market/' | relative_url }}">글로벌 시장 분석</a>
+          <a href="{{ '/categories/geopolitics/' | relative_url }}">지정학 리스크</a>
+          <a href="{{ '/categories/energy-tech/' | relative_url }}">에너지·차세대 기술</a>
+          <a href="{{ '/categories/weekly/' | relative_url }}">위클리 브리핑</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col__heading">바로가기</div>
+        <div class="footer-links">
+          <a href="{{ '/posts/' | relative_url }}">전체 아카이브</a>
+          <a href="{{ '/about/' | relative_url }}">소개</a>
+          <a href="{{ site.naver_blog }}" target="_blank" rel="noopener">네이버 블로그 ↗</a>
+          <a href="{{ '/feed.xml' | relative_url }}">RSS 피드</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col__heading">관심 분야</div>
+        <div class="footer-links">
+          <a href="#">반도체·AI 공급망</a>
+          <a href="#">수소·원자력 에너지</a>
+          <a href="#">미·중 기술 패권</a>
+          <a href="#">글로벌 금융시장</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© {{ 'now' | date: '%Y' }} 안희권 / Argon Intelligence. All rights reserved.</span>
+      <span>Built with Jekyll · Hosted on GitHub Pages</span>
+    </div>
+  </div>
+</footer>
