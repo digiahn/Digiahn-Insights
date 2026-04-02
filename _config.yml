@@ -5,14 +5,9 @@ email: ""
 url: "https://digiahn.github.io"
 baseurl: ""
 
-# 네이버 블로그 링크
 naver_blog: "https://blog.naver.com/argon"
+github_username: "DigiAHN"
 
-# 소셜
-twitter_username: ""
-github_username: "digiahn"
-
-# 빌드
 markdown: kramdown
 highlighter: rouge
 permalink: /:year/:month/:day/:title/
@@ -21,13 +16,11 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-# 플러그인
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# 카테고리 (브랜드 가이드 기반)
 categories_list:
   - name: "글로벌 시장 분석"
     slug: "global-market"
@@ -51,3 +44,6 @@ exclude:
   - Gemfile.lock
   - README.md
   - node_modules
+  - vendor
+  - .bundle
+  - .sass-cache

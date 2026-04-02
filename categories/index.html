@@ -1,0 +1,46 @@
+---
+layout: default
+title: "카테고리"
+permalink: /categories/
+---
+
+<div class="categories-page">
+  <div class="container">
+
+    <div style="margin-bottom:0.75rem;font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--accent-2);font-weight:500;">Categories</div>
+    <h1 style="font-family:var(--ff-display);font-size:clamp(1.8rem,3.5vw,2.8rem);margin-bottom:3rem;">카테고리별 분석</h1>
+
+    {% assign categories = site.categories_list %}
+    {% for cat in categories %}
+    <div class="category-section">
+      <div class="category-section__header">
+        <span class="category-section__icon">{{ cat.icon }}</span>
+        <div>
+          <div class="category-section__name">{{ cat.name }}</div>
+          <div class="category-section__en">{{ cat.en }}</div>
+        </div>
+      </div>
+
+      {% assign cat_posts = site.posts | where: "category", cat.name %}
+      {% if cat_posts.size > 0 %}
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;">
+          {% for post in cat_posts %}
+          <a href="{{ post.url | relative_url }}" class="post-card">
+            <div class="post-card__cat">{{ post.category }}</div>
+            <h3 class="post-card__title">{{ post.title }}</h3>
+            <p class="post-card__excerpt">{{ post.excerpt | strip_html }}</p>
+            <div class="post-card__meta">
+              <span class="post-card__date">{{ post.date | date: "%Y. %m. %d" }}</span>
+              {% if post.reading_time %}<span class="post-card__reading-time">{{ post.reading_time }}분 읽기</span>{% endif %}
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      {% else %}
+        <p style="color:var(--ink-4);font-size:0.9rem;padding:1rem 0;">이 카테고리의 글이 곧 업로드됩니다.</p>
+      {% endif %}
+    </div>
+    {% endfor %}
+
+  </div>
+</div>

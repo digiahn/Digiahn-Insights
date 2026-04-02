@@ -1,0 +1,99 @@
+<!-- SMR 글로벌 경쟁 현황 도표 — _includes/chart-smr-race.html -->
+<div style="margin: 2rem 0; overflow-x: auto;">
+<svg width="100%" viewBox="0 0 700 360" xmlns="http://www.w3.org/2000/svg" font-family="'DM Sans','Apple SD Gothic Neo',sans-serif">
+
+  <rect width="700" height="360" fill="#faf9f6" rx="8"/>
+
+  <!-- 제목 -->
+  <text x="350" y="30" text-anchor="middle" font-size="14" font-weight="500" fill="#0e0e0c">SMR 글로벌 상업화 레이스 (2025 기준)</text>
+  <text x="350" y="48" text-anchor="middle" font-size="11" fill="#8a897f">주요 6개 노형 비교</text>
+
+  <!-- 헤더 -->
+  <rect x="20" y="60" width="660" height="28" rx="4" fill="#1a3a5c"/>
+  <text x="80"  y="78" font-size="10" font-weight="500" fill="#fff" text-anchor="middle">기업</text>
+  <text x="175" y="78" font-size="10" font-weight="500" fill="#fff" text-anchor="middle">국가</text>
+  <text x="280" y="78" font-size="10" font-weight="500" fill="#fff" text-anchor="middle">노형</text>
+  <text x="390" y="78" font-size="10" font-weight="500" fill="#fff" text-anchor="middle">용량</text>
+  <text x="490" y="78" font-size="10" font-weight="500" fill="#fff" text-anchor="middle">상업화 목표</text>
+  <text x="610" y="78" font-size="10" font-weight="500" fill="#fff" text-anchor="middle">진행도</text>
+
+  <!-- 행 데이터 -->
+  <!-- Row 1: NuScale -->
+  <rect x="20" y="88" width="660" height="36" rx="0" fill="#f2f0eb"/>
+  <text x="80"  y="110" font-size="10" fill="#0e0e0c" text-anchor="middle">NuScale</text>
+  <text x="175" y="110" font-size="10" fill="#0e0e0c" text-anchor="middle">🇺🇸 미국</text>
+  <text x="280" y="110" font-size="10" fill="#0e0e0c" text-anchor="middle">VOYGR</text>
+  <text x="390" y="110" font-size="10" fill="#0e0e0c" text-anchor="middle">77MW×6</text>
+  <text x="490" y="110" font-size="10" fill="#0e0e0c" text-anchor="middle">2030년대 초</text>
+  <!-- 진행 바 -->
+  <rect x="568" y="102" width="64" height="10" rx="5" fill="#d8d5cc"/>
+  <rect x="568" y="102" width="32" height="10" rx="5" fill="#c8922a"/>
+  <text x="636" y="111" font-size="9" fill="#8a897f">50%</text>
+
+  <!-- Row 2: Rolls-Royce -->
+  <rect x="20" y="124" width="660" height="36" rx="0" fill="#faf9f6"/>
+  <text x="80"  y="146" font-size="10" fill="#0e0e0c" text-anchor="middle">Rolls-Royce</text>
+  <text x="175" y="146" font-size="10" fill="#0e0e0c" text-anchor="middle">🇬🇧 영국</text>
+  <text x="280" y="146" font-size="10" fill="#0e0e0c" text-anchor="middle">UK SMR</text>
+  <text x="390" y="146" font-size="10" fill="#0e0e0c" text-anchor="middle">470MW</text>
+  <text x="490" y="146" font-size="10" fill="#0e0e0c" text-anchor="middle">2030년대 초</text>
+  <rect x="568" y="138" width="64" height="10" rx="5" fill="#d8d5cc"/>
+  <rect x="568" y="138" width="26" height="10" rx="5" fill="#c8922a"/>
+  <text x="636" y="147" font-size="9" fill="#8a897f">40%</text>
+
+  <!-- Row 3: GE-Hitachi -->
+  <rect x="20" y="160" width="660" height="36" rx="0" fill="#f2f0eb"/>
+  <text x="80"  y="182" font-size="10" fill="#0e0e0c" text-anchor="middle">GE-Hitachi</text>
+  <text x="175" y="182" font-size="10" fill="#0e0e0c" text-anchor="middle">🇺🇸🇯🇵 미·일</text>
+  <text x="280" y="182" font-size="10" fill="#0e0e0c" text-anchor="middle">BWRX-300</text>
+  <text x="390" y="182" font-size="10" fill="#0e0e0c" text-anchor="middle">300MW</text>
+  <text x="490" y="182" font-size="10" fill="#0e0e0c" text-anchor="middle">2028~2030</text>
+  <rect x="568" y="174" width="64" height="10" rx="5" fill="#d8d5cc"/>
+  <rect x="568" y="174" width="45" height="10" rx="5" fill="#1a3a5c"/>
+  <text x="636" y="183" font-size="9" fill="#1a3a5c">70%</text>
+
+  <!-- Row 4: X-Energy -->
+  <rect x="20" y="196" width="660" height="36" rx="0" fill="#faf9f6"/>
+  <text x="80"  y="218" font-size="10" fill="#0e0e0c" text-anchor="middle">X-Energy</text>
+  <text x="175" y="218" font-size="10" fill="#0e0e0c" text-anchor="middle">🇺🇸 미국</text>
+  <text x="280" y="218" font-size="10" fill="#0e0e0c" text-anchor="middle">Xe-100</text>
+  <text x="390" y="218" font-size="10" fill="#0e0e0c" text-anchor="middle">80MW×4</text>
+  <text x="490" y="218" font-size="10" fill="#0e0e0c" text-anchor="middle">2030년</text>
+  <rect x="568" y="210" width="64" height="10" rx="5" fill="#d8d5cc"/>
+  <rect x="568" y="210" width="38" height="10" rx="5" fill="#1a3a5c"/>
+  <text x="636" y="219" font-size="9" fill="#1a3a5c">60%</text>
+
+  <!-- Row 5: 두산에너빌리티 (강조) -->
+  <rect x="20" y="232" width="660" height="36" rx="0" fill="#e8f0f8"/>
+  <rect x="20" y="232" width="4" height="36" fill="#1a3a5c"/>
+  <text x="80"  y="254" font-size="10" font-weight="500" fill="#1a3a5c" text-anchor="middle">두산에너빌리티</text>
+  <text x="175" y="254" font-size="10" fill="#0e0e0c" text-anchor="middle">🇰🇷 한국</text>
+  <text x="280" y="254" font-size="10" fill="#0e0e0c" text-anchor="middle">i-SMR</text>
+  <text x="390" y="254" font-size="10" fill="#0e0e0c" text-anchor="middle">170MW</text>
+  <text x="490" y="254" font-size="10" fill="#0e0e0c" text-anchor="middle">2030년대 초</text>
+  <rect x="568" y="246" width="64" height="10" rx="5" fill="#d8d5cc"/>
+  <rect x="568" y="246" width="22" height="10" rx="5" fill="#c8922a"/>
+  <text x="636" y="255" font-size="9" fill="#c8922a">35%</text>
+
+  <!-- Row 6: CNNC -->
+  <rect x="20" y="268" width="660" height="36" rx="0" fill="#faf9f6"/>
+  <text x="80"  y="290" font-size="10" fill="#0e0e0c" text-anchor="middle">CNNC</text>
+  <text x="175" y="290" font-size="10" fill="#0e0e0c" text-anchor="middle">🇨🇳 중국</text>
+  <text x="280" y="290" font-size="10" fill="#0e0e0c" text-anchor="middle">ACP100</text>
+  <text x="390" y="290" font-size="10" fill="#0e0e0c" text-anchor="middle">125MW</text>
+  <text x="490" y="290" font-size="10" fill="#0e0e0c" text-anchor="middle">2026년 (해남도)</text>
+  <rect x="568" y="282" width="64" height="10" rx="5" fill="#d8d5cc"/>
+  <rect x="568" y="282" width="54" height="10" rx="5" fill="#5a5950"/>
+  <text x="636" y="291" font-size="9" fill="#5a5950">85%</text>
+
+  <!-- 범례 -->
+  <rect x="20" y="316" width="660" height="32" rx="4" fill="#f2f0eb"/>
+  <rect x="36" y="327" width="12" height="8" rx="2" fill="#1a3a5c"/>
+  <text x="54" y="335" font-size="9" fill="#2e2d28">70%+ 진행</text>
+  <rect x="130" y="327" width="12" height="8" rx="2" fill="#c8922a"/>
+  <text x="148" y="335" font-size="9" fill="#2e2d28">30~60% 진행</text>
+  <rect x="240" y="327" width="12" height="8" rx="2" fill="#d8d5cc"/>
+  <text x="258" y="335" font-size="9" fill="#2e2d28">30% 미만</text>
+  <text x="440" y="335" font-size="9" fill="#8a897f">출처: IAEA, 각사 발표, Argon Intelligence 종합 (2025.03)</text>
+</svg>
+</div>
