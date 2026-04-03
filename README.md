@@ -103,3 +103,44 @@ argon-blog/
 | v1.1 | 2025.03 | digiahn 계정으로 URL 변경 |
 | v1.2 | 2025.03 | 포스트 4편 + 도표 3종 추가 |
 | v1.3 | 2025.04 | 안정화 수정 (CSS 빌드, favicon, categories 페이지, 잘못된 폴더 제거) |
+
+---
+
+## Netlify CMS 관리자 화면 세팅 (최초 1회)
+
+### 1단계 — Netlify에 사이트 등록
+
+1. [netlify.com](https://netlify.com) 접속 → 무료 가입
+2. **Add new site → Import an existing project**
+3. GitHub 연결 → `digiahn.github.io` 저장소 선택
+4. Build command: `jekyll build` / Publish directory: `_site`
+5. **Deploy site** 클릭
+
+### 2단계 — Netlify Identity 활성화
+
+1. Netlify 대시보드 → **Site settings → Identity**
+2. **Enable Identity** 클릭
+3. **Git Gateway** → **Enable Git Gateway** 클릭
+4. Registration: **Invite only** 선택 (본인만 접근)
+
+### 3단계 — 관리자 계정 초대
+
+1. Identity → **Invite users**
+2. 본인 이메일 입력 → 초대 메일 확인 → 비밀번호 설정
+
+### 4단계 — 관리자 화면 접속
+
+브라우저에서 `https://digiahn.github.io/admin/` 접속
+→ 이메일·비밀번호 로그인
+→ 포스트 작성·편집·발행 가능!
+
+---
+
+### 관리자 화면에서 할 수 있는 것
+
+| 메뉴 | 기능 |
+|------|------|
+| 📝 분석 포스트 | 글 작성·편집·삭제, 이미지 첨부 |
+| 📰 위클리 브리핑 | 브리핑 전용 템플릿으로 빠른 작성 |
+| 📄 페이지 | 소개 페이지 편집 |
+| ⚙️ 사이트 설정 | 사이트 제목·설명·네이버 블로그 URL 변경 |

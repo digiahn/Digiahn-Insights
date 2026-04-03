@@ -1,0 +1,25 @@
+[build]
+  command   = "jekyll build"
+  publish   = "_site"
+
+[build.environment]
+  JEKYLL_ENV = "production"
+  RUBY_VERSION = "3.2.0"
+
+# Netlify Identity + Git Gateway 활성화
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+# 리디렉션 설정
+[[redirects]]
+  from = "/admin"
+  to   = "/admin/"
+  status = 301
+
+# 보안 헤더
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Content-Security-Policy = "frame-ancestors 'none'"
